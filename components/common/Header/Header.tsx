@@ -1,6 +1,5 @@
 import Cart from "./Cart";
 import HamburgerMenu from "./HamburgerMenu";
-import DropDownMenu from "./HamburgerMenu";
 import Logo from "./Logo";
 import Navbar from "./Navbar";
 import Profile from "./Profile";

@@ -17,7 +17,7 @@ const HamburgerMenu = () => {
 
       {/* Dropdown Menu */}
       <div
-        className={`absolute bg-white top-15 rounded-xl w-full transition-all duration-300 ease-in-out p-5 -ml-4 ${
+        className={`absolute bg-white top-15 rounded-xl w-full transition-all duration-300 ease-in-out p-5 -ml-4 z-100 ${
           showMenu
             ? "opacity-100 translate-y-0 flex-col flex gap-5"
             : "opacity-0 -translate-y-4 pointer-events-none"

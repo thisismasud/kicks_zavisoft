@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="">
         
-      <ul className="flex flex-col md:flex-row gap-5 md:gap-10 font-semibold text-[16px] text-dark-gray">
+      <ul className="flex flex-col md:flex-row gap-7 md:gap-10 font-semibold text-[16px] text-dark-gray">
         <li>
           <Link href="/new-drops">New Drops🔥 </Link>
         </li>

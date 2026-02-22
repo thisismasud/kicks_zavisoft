@@ -2,13 +2,15 @@ import Banner from "./Banner";
 
 const Hero = () => {
   return (
-    <section>
-        {/* Hero Title Text */}
-      <div className="hero-title font-rubik font-bold text-center text-dark-gray lg:leading-62">
+    <section aria-labelledby="hero-title">
+      <h1
+        id="hero-title"
+        className="hero-title font-rubik font-bold text-center text-dark-gray tracking-tight sm:tracking-normal lg:leading-62"
+      >
         DO IT <span className="text-primary">RIGHT</span>
-      </div>
+      </h1>
 
-        <Banner/>
+      <Banner />
     </section>
   );
 };
