@@ -16,5 +16,5 @@ body {
 }
 
 .hero-title{
-    font-size: clamp(60rem, 22.385rem + 167.179vw, 223rem)
+    font-size: clamp(3.75rem, 1.399rem + 10.449vw, 13.938rem)
 }

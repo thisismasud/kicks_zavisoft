@@ -21,9 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${rubik.variable} antialiased max-w-330 mx-auto px-4 lg:px-0`}
+        className={`${rubik.variable} antialiased px-4 lg:px-0`}
       >
-        <Header />
+        <div className="max-w-330 mx-auto">
+            <Header />
+        </div>
         {children}
       </body>
     </html>
