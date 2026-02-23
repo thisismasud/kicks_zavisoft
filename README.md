@@ -1,36 +1,125 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kicks
 
-## Getting Started
+A modern e-commerce application built with Next.js, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## Prerequisites
 
+- Node.js 20+ or higher
+- pnpm (recommended) or npm
+
+## Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/thisismasud/kicks_zavisoft.git
+cd kicks
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+pnpm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Configure environment variables:
+Create a `.env` file in the root directory and add:
+```env
+API_URL="https://api.escuelajs.co/api/v1"
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Available Scripts
 
-## Learn More
+### Development
+```bash
+pnpm dev
+```
+Starts the development server at `http://localhost:3000`
 
-To learn more about Next.js, take a look at the following resources:
+### Build
+```bash
+pnpm build
+```
+Creates an optimized production build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Production
+```bash
+pnpm start
+```
+Runs the production server
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Linting
+```bash
+pnpm lint
+```
+Runs ESLint to check code quality
 
-## Deploy on Vercel
+## Folder Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+kicks/
+├── app/
+│   ├── error.tsx              # Error boundary component
+│   ├── globals.css            # Global styles
+│   ├── layout.tsx             # Root layout
+│   ├── not-found.tsx          # 404 page
+│   └── page.tsx               # Home page
+│
+├── components/
+│   ├── common/
+│   │   ├── Footer/            
+│   │   └── Header/
+│   │       ├── Cart.tsx      
+│   │       ├── HamburgerMenu.tsx
+│   │       ├── Header.tsx
+│   │       ├── Logo.tsx
+│   │       ├── Navbar.tsx
+│   │       ├── Profile.tsx
+│   │       └── Search.tsx
+│   ├── Home/
+│   │   ├── Hero/
+│   │   │   ├── Banner.tsx
+│   │   │   ├── BannerThumbnail.tsx
+│   │   │   ├── Hero.tsx
+│   │   │   └── Label.tsx
+│   │   └── NewDrops/
+│   │       └── NewDrops.tsx
+│   └── Products/
+│       ├── ProductCard.tsx
+│       └── Tag.tsx
+│
+├── lib/
+│   ├── config/
+│   │   └── site-config.ts     # Site configuration
+│   └── data/
+│       └── products.ts        # Product data
+│
+├── public/
+│   └── products/              # Product images and assets
+│
+├── .env                       # Environment variables
+├── eslint.config.mjs
+├── next.config.ts
+├── package.json
+├── postcss.config.mjs
+├── pnpm-lock.yaml
+├── pnpm-workspace.yaml
+├── tsconfig.json
+└── README.md
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Environment Variables
+
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `API_URL` | Base URL for API requests | `https://api.escuelajs.co/api/v1` |
+
+## Technologies
+
+- **Framework**: Next.js 16+
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Package Manager**: pnpm
+- **Linting**: ESLint
+
+## License
+
+MIT
